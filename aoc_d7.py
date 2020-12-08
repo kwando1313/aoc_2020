@@ -5,14 +5,7 @@ bags = {}
 total = 0
 nested_bag_colours = []
 
-# def find_bags(color, bags):
-#     for colour in bags:
-#         if color in bags[colour]:
-#             print colour, bags[colour]
-#             return find_bags(colour, bags) + 1
-#     return 0
-
-## Anyone
+# #MakeMyBag
 for c in content:
     full_string = c.strip("\n")
     main_colour = full_string.split(" bag")[0]
@@ -24,14 +17,10 @@ for c in content:
             number = int(colour.split(" ")[0])
             colours.append({actual_colour_name: number})
     bags[main_colour] = colours
-#print bags
-#print bags
 find_bags = []
 all_colours = set()
 
 find_bags.append("shiny gold")
-
-#total = find_bags("shiny gold", bags)
 
 # How many bags can contain a shiny gold bag?
 while len(find_bags) > 0:
@@ -47,6 +36,7 @@ while len(find_bags) > 0:
                     all_colours.add(colour)
     find_bags.pop(0)
 
+# If I want to print answer one, do this one
 #print total
 
 # How many bags does a shiny gold bag contain?
