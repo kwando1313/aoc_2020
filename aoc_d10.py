@@ -3,10 +3,9 @@ content = my_file.readlines()
 
 voltages = []
 sorted_voltages = []
-one_away = 1
+one_away = 0
 three_away = 0
 trib = [1, 1, 2, 4, 7, 13]
-# #MakeMyBag
 
 for c in content:
     voltages.append(int(c.strip("\n")))
@@ -26,7 +25,7 @@ while i < len(sorted_voltages):
     else:
         three_away = three_away + 1
         value = value * trib[(i - j)]
-        print value
+        #print value
         j = i + 1
     i = i + 1
 
