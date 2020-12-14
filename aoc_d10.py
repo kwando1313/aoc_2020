@@ -5,7 +5,7 @@ voltages = []
 sorted_voltages = []
 one_away = 0
 three_away = 0
-trib = [1, 1, 2, 4, 7, 13]
+trib = [1, 1, 2, 4, 7, 13, 24]
 
 for c in content:
     voltages.append(int(c.strip("\n")))
@@ -32,6 +32,5 @@ while i < len(sorted_voltages):
 print one_away
 print three_away
 print one_away * three_away
-print value # Tribonacci numbers. I don't want to write code to re-find this answer.
-#
+print value # Tribonacci numbers. 
 #1,3,2,1,1,2,1,1,1,1
